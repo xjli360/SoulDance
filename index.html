@@ -305,7 +305,7 @@
           <div class="desc"><b> </b></div>
           <div class="item">      
             <div class="btn-video">
-              <video id="mmr-d1" src="assets/mmr_res/d1.mp4" frameborder="0"  playsinline loop allowfullscreen></video>
+              <video id="mmr-d1" src="assets/mmr_res/d1.mp4" frameborder="0" autoplay muted playsinline loop allowfullscreen></video>
             </div>
           </div>
         </div>
@@ -313,7 +313,7 @@
           <div class="desc"><b> </b></div>
           <div class="item">
             <div class="btn-video">
-              <video id="mmr-d2" src="assets/mmr_res/d2.mp4" frameborder="0" playsinline loop allowfullscreen></video>
+              <video id="mmr-d2" src="assets/mmr_res/d2.mp4" frameborder="0" autoplay muted playsinline loop allowfullscreen></video>
             </div>
           </div>
         </div>
@@ -321,7 +321,7 @@
           <div class="desc"><b> </b></div>
           <div class="item">
             <div class="btn-video">
-              <video id="mmr-d3" src="assets/mmr_res/d3.mp4" frameborder="0"  playsinline loop allowfullscreen></video>
+              <video id="mmr-d3" src="assets/mmr_res/d3.mp4" frameborder="0" autoplay muted playsinline loop allowfullscreen></video>
             </div>
           </div>
         </div>
@@ -329,7 +329,7 @@
           <div class="desc"><b> </b></div>
           <div class="item">      
             <div class="btn-video">
-              <video id="mmr-d4" src="assets/mmr_res/d4.mp4" frameborder="0"  playsinline loop allowfullscreen></video>
+              <video id="mmr-d4" src="assets/mmr_res/d4.mp4" frameborder="0" autoplay muted playsinline loop allowfullscreen></video>
             </div>
           </div>
         </div>
@@ -567,238 +567,41 @@
   <script src="./assets/js/jquery.event.move.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const vid1b = document.getElementById('1b');
-      const vid2b = document.getElementById('2b');
-      const vid3b = document.getElementById('3b');
-      const vid4b = document.getElementById('4b');
-      const vid5b = document.getElementById('5b');
-      const vid6b = document.getElementById('6b');
-      const vid7b = document.getElementById('7b');
-      const vid9b = document.getElementById('9b');
-      const vid10b = document.getElementById('10b');
-      const vid11b = document.getElementById('11b');
-      const vid12b = document.getElementById('12b');
-      const vid13b = document.getElementById('13b');
-      const vid15b = document.getElementById('15b');
-      const vid16b = document.getElementById('16b');
-      const vid17b = document.getElementById('17b');
-      const vid18b = document.getElementById('18b');
-      const vid20b = document.getElementById('20b');
-      const vid21b = document.getElementById('21b');
-      const vid22b = document.getElementById('22b');
-      const vid23b = document.getElementById('23b');
-      const vid24b = document.getElementById('24b');
-      const vid25b = document.getElementById('25b');
-      const vid27b = document.getElementById('27b');
-      const vid28b = document.getElementById('28b');
-      const vid30b = document.getElementById('30b');
-      const vid1e = document.getElementById('1e');
-      const vid2e = document.getElementById('2e');
-      const vid3e = document.getElementById('3e');
-      const vid4e = document.getElementById('4e');
-      const vid5e = document.getElementById('5e');
-      const vid6e = document.getElementById('6e');
-      const vid7e = document.getElementById('7e');
-      const vid9e = document.getElementById('9e');
-      const vid10e = document.getElementById('10e');
-      const vid11e = document.getElementById('11e');
-      const vid12e = document.getElementById('12e');
-      const vid13e = document.getElementById('13e');
-      const vid15e = document.getElementById('15e');
-      const vid16e = document.getElementById('16e');
-      const vid17e = document.getElementById('17e');
-      const vid18e = document.getElementById('18e');
-      const vid20e = document.getElementById('20e');
-      const vid21e = document.getElementById('21e');
-      const vid22e = document.getElementById('22e');
-      const vid23e = document.getElementById('23e');
-      const vid24e = document.getElementById('24e');
-      const vid25e = document.getElementById('25e');
-      const vid27e = document.getElementById('27e');
-      const vid28e = document.getElementById('28e');
-      const vid30e = document.getElementById('30e');
-      const vid1r = document.getElementById('1r');
-      const vid2r = document.getElementById('2r');
-      const vid3r = document.getElementById('3r');
-      const vid4r = document.getElementById('4r');
-      const vid5r = document.getElementById('5r');
-      const vid6r = document.getElementById('6r');
-      const vid7r = document.getElementById('7r');
-      const vid8r = document.getElementById('8r');
+      const vid1u = document.getElementById('mmr-u1');
+      const vid2u = document.getElementById('mmr-u2');
+      const vid3u = document.getElementById('mmr-u3');
+      const vid4u = document.getElementById('mmr-u4');
+      const vid1d = document.getElementById('mmr-d1');
+      const vid2d = document.getElementById('mmr-d2');
+      const vid3d = document.getElementById('mmr-d3');
+      const vid4d = document.getElementById('mmr-d4');
+
+
+
       // クリックで音声をトグル
       vid1b.addEventListener('click', function() {
-        toggleAudio(vid1b);
+        toggleAudio(vid1u);
       });
       vid2b.addEventListener('click', function() {
-        toggleAudio(vid2b);
+        toggleAudio(vid2u);
       });
       vid3b.addEventListener('click', function() {
-        toggleAudio(vid3b);
+        toggleAudio(vid3u);
       });
       vid4b.addEventListener('click', function() {
-        toggleAudio(vid4b);
+        toggleAudio(vid4u);
       });
       vid5b.addEventListener('click', function() {
-        toggleAudio(vid5b);
+        toggleAudio(vid1d);
       });
       vid6b.addEventListener('click', function() {
-        toggleAudio(vid6b);
+        toggleAudio(vid2d);
       });
       vid7b.addEventListener('click', function() {
-        toggleAudio(vid7b);
+        toggleAudio(vid3d);
       });
       vid9b.addEventListener('click', function() {
-        toggleAudio(vid9b);
-      });
-      vid10b.addEventListener('click', function() {
-        toggleAudio(vid10b);
-      });
-      vid11b.addEventListener('click', function() {
-        toggleAudio(vid11b);
-      });
-      vid12b.addEventListener('click', function() {
-        toggleAudio(vid12b);
-      });
-      vid13b.addEventListener('click', function() {
-        toggleAudio(vid13b);
-      });
-      vid15b.addEventListener('click', function() {
-        toggleAudio(vid15b);
-      });
-      vid16b.addEventListener('click', function() {
-        toggleAudio(vid16b);
-      });
-      vid17b.addEventListener('click', function() {
-        toggleAudio(vid17b);
-      });
-      vid18b.addEventListener('click', function() {
-        toggleAudio(vid18b);
-      });
-      vid20b.addEventListener('click', function() {
-        toggleAudio(vid20b);
-      });
-      vid21b.addEventListener('click', function() {
-        toggleAudio(vid21b);
-      });
-      vid22b.addEventListener('click', function() {
-        toggleAudio(vid22b);
-      });
-      vid23b.addEventListener('click', function() {
-        toggleAudio(vid23b);
-      });
-      vid24b.addEventListener('click', function() {
-        toggleAudio(vid24b);
-      });
-      vid25b.addEventListener('click', function() {
-        toggleAudio(vid25b);
-      });
-      vid27b.addEventListener('click', function() {
-        toggleAudio(vid27b);
-      });
-      vid28b.addEventListener('click', function() {
-        toggleAudio(vid28b);
-      });
-      vid30b.addEventListener('click', function() {
-        toggleAudio(vid30b);
-      });
-      vid1e.addEventListener('click', function() {
-        toggleAudio(vid1e);
-      });
-      vid2e.addEventListener('click', function() {
-        toggleAudio(vid2e);
-      });
-      vid3e.addEventListener('click', function() {
-        toggleAudio(vid3e);
-      });
-      vid4e.addEventListener('click', function() {
-        toggleAudio(vid4e);
-      });
-      vid5e.addEventListener('click', function() {
-        toggleAudio(vid5e);
-      });
-      vid6e.addEventListener('click', function() {
-        toggleAudio(vid6e);
-      });
-      vid7e.addEventListener('click', function() {
-        toggleAudio(vid7e);
-      });
-      vid9e.addEventListener('click', function() {
-        toggleAudio(vid9e);
-      });
-      vid10e.addEventListener('click', function() {
-        toggleAudio(vid10e);
-      });
-      vid11e.addEventListener('click', function() {
-        toggleAudio(vid11e);
-      });
-      vid12e.addEventListener('click', function() {
-        toggleAudio(vid12e);
-      });
-      vid13e.addEventListener('click', function() {
-        toggleAudio(vid13e);
-      });
-      vid15e.addEventListener('click', function() {
-        toggleAudio(vid15e);
-      });
-      vid16e.addEventListener('click', function() {
-        toggleAudio(vid16e);
-      });
-      vid17e.addEventListener('click', function() {
-        toggleAudio(vid17e);
-      });
-      vid18e.addEventListener('click', function() {
-        toggleAudio(vid18e);
-      });
-      vid20e.addEventListener('click', function() {
-        toggleAudio(vid20e);
-      });
-      vid21e.addEventListener('click', function() {
-        toggleAudio(vid21e);
-      });
-      vid22e.addEventListener('click', function() {
-        toggleAudio(vid22e);
-      });
-      vid23e.addEventListener('click', function() {
-        toggleAudio(vid23e);
-      });
-      vid24e.addEventListener('click', function() {
-        toggleAudio(vid24e);
-      });
-      vid25e.addEventListener('click', function() {
-        toggleAudio(vid25e);
-      });
-      vid27e.addEventListener('click', function() {
-        toggleAudio(vid27e);
-      });
-      vid28e.addEventListener('click', function() {
-        toggleAudio(vid28e);
-      });
-      vid30e.addEventListener('click', function() {
-        toggleAudio(vid30e);
-      });
-      vid1r.addEventListener('click', function() {
-        toggleAudio(vid1r);
-      });
-      vid2r.addEventListener('click', function() {
-        toggleAudio(vid2r);
-      });
-      vid3r.addEventListener('click', function() {
-        toggleAudio(vid3r);
-      });
-      vid4r.addEventListener('click', function() {
-        toggleAudio(vid4r);
-      });
-      vid5r.addEventListener('click', function() {
-        toggleAudio(vid5r);
-      });
-      vid6r.addEventListener('click', function() {
-        toggleAudio(vid6r);
-      });
-      vid7r.addEventListener('click', function() {
-        toggleAudio(vid7r);
-      });
-      vid8r.addEventListener('click', function() {
-        toggleAudio(vid8r);
+        toggleAudio(vid4d);
       });
     });
   
